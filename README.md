@@ -39,11 +39,14 @@ Key objectives:
 - Ensemble models (Random Forest, LightGBM, XGBoost) achieved higher ROC-AUC and PR-AUC than Logistic Regression.  
 
 ## Comparision table:
-| Model          | Precision (0) | Recall (0) | Precision (1) | Recall (1) | ROC-AUC | PR-AUC |
-|----------------|---------------|------------|---------------|------------|---------|--------|
-| LogisticReg    | 0.999         | 0.931      | 0.021         | 0.701      | 0.894   | 0.155  |
-| RandomForest   | 0.999         | 0.999      | 0.720         | 0.817      | 0.993   | 0.837  |
-| XGBoost        | 0.999         | 0.999      | 0.81          | 0.81       | 0.997   | 0.873  |
-| LightGBM Auto	 |	1.0					 | 0.995      | 0.438         | 0.924      | 0.998	 | 0.888  |
-| LightGBM Manual|	1.0	         | 0.998	    | 0.593	        | 0.900	     | 0.998	 | 0.892  |
+| Models         | Precision (1) | Recall (1) | ROC-AUC | PR-AUC | Inference Time |
+|----------------|---------------|------------|---------|--------|----------------|
+| LogisticReg    | 0.021         | 0.701      | 0.894   | 0.155  | 0.05s          |
+| RandomForest   | 0.720         | 0.817      | 0.993   | 0.837  | 15.66s         |
+| XGBoost        | 0.81          | 0.81       | 0.997   | 0.873  | 4.04s          |
+| LightGBM Auto	 | 0.438         | 0.924      | 0.998	  | 0.888  | 47.06s         |
+| LightGBM Manual| 0.593	       | 0.900	    | 0.998	  | 0.892  | 63.45s         |
+
+## Visualization:
+<img width="1489" height="590" alt="image" src="https://github.com/user-attachments/assets/6ac6c1c0-8d38-4b12-bf82-3c3585608bbf" />
 
